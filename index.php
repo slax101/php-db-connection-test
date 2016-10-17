@@ -3,6 +3,10 @@ $hostname = "192.168.33.14";
 $username = "root";
 $password = "abc";
 
+//Output PHP Version and hostname of running webserver
+echo "PHP Version: " . phpversion() . "<br>";
+echo "Hostname: " . gethostname() . "<br>";
+
 //Connect to MySQL DB
 $conn = mysql_connect($hostname, $username, $password)
   or die("Unable to connect to MySQL");
